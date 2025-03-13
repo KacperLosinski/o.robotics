@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/bd96bc92b7.js" crossorigin="anonymous"></script>
 
 </head>
@@ -33,10 +34,9 @@
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link active" href="#home">Home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
-                    <a class="nav-link" href="#galery">galeria</a>
                     <a class="nav-link" href="#offer">oferta</a>
                     <a class="nav-link" href="#services">usługi</a>
-                    <a class="nav-link" href="#achievements">osiągnięcia</a>
+                    <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#contact">kontakt </a>
 
                 </div>
@@ -108,25 +108,30 @@
 
                 <div class="row">
 
-                    <div class="col-lg-3 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="col-lg text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="700">
                         <p><img src="img/siemens-logo.png" alt="Siemens" class="brand-logo"></p>
                         <p class="aboutus-hero-text">System automatyki przemysłowej z SIMATIC S7, TIA Portal i SCADA,
                             powszechnie stosowany w produkcji.</p>
                     </div>
-                    <div class="col-lg-3 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="800">
+                    <div class="col-lg text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="800">
                         <p><img src="img/yaskawa-logo.png" alt="Yaskawa" class="brand-logo"></p>
                         <p class="aboutus-hero-text">Roboty Motoman i kontrolery YRC1000, wykorzystywane w spawaniu,
                             montażu i transporcie.</p>
                     </div>
-                    <div class="col-lg-3 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="900">
+                    <div class="col-lg text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="1000">
+                        <p><img src="img/fanuc-logo.png" alt="Fanuc" class="brand-logo"></p>
+                        <p class="aboutus-hero-text">Lider w automatyzacji i sterowaniu CNC, oferujący RoboGuide i
+                            sterowniki CNC Series 30i/31i.</p>
+                    </div>
+                    <div class="col-lg text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="900">
                         <p><img src="img/abb-logo.png" alt="ABB" class="brand-logo"></p>
                         <p class="aboutus-hero-text">Robotyka przemysłowa z RobotStudio i językiem RAPID, używana w
                             logistyce, pakowaniu i spawaniu.</p>
                     </div>
-                    <div class="col-lg-3 text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="1000">
-                        <p><img src="img/fanuc-logo.png" alt="Fanuc" class="brand-logo"></p>
-                        <p class="aboutus-hero-text">Lider w automatyzacji i sterowaniu CNC, oferujący RoboGuide i
-                            sterowniki CNC Series 30i/31i.</p>
+
+                    <div class="col-lg text-center aboutus-hero-item" data-aos="zoom-in" data-aos-delay="1000">
+                        <p><img src="img/kuka-logo.png" alt="Kuka" class="brand-logo"></p>
+                        <p class="aboutus-hero-text">Zaawansowane roboty przemysłowe i systemy KRL, wykorzystywane w automatyzacji i inteligentnej produkcji.</p>
                     </div>
 
 
@@ -139,7 +144,74 @@
             </div>
         </section>
 
-        <section id="galery" class="galery py-5">
+        <section id="offer" class="prices py-5 bg-light">
+
+            <h2>Oferta</h2>
+            <div class="underline"></div>
+
+            <div class="container">
+                <div class="price-wrap row text-center justify-content-center">
+
+
+                    <div class="col-md-6 col-xl-4" data-aos="flip-right" data-aos-delay="200">
+                        <div class="price-box">
+                            <h3>Motoman SK6</h3>
+                            <hr>
+                            <p><span>System: </span>Yaskawa MRC</p>
+                            <p><span>Ładowność: </span>6 kg</p>
+                            <p><span>Zasięg: </span>1322 mm</p>
+                            <p><span>Precyzja powtórzeń: </span>±0,1 mm</p>
+                            <p class="price"><span>29 000zł</span></p>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.open('https://www.olx.pl/d/oferta/yaskawa-motoman-robot-przemyslowy-spawalniczy-zintegrowany-obrotnik-CID4269-IDX0UPk.html', '_blank');">Zamawiam</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4" data-aos="flip-right" data-aos-delay="400">
+                        <div class="price-box">
+                            <h3>Motoman HP20</h3>
+                            <hr>
+                            <p><span>System: </span>Yaskawa NX100</p>
+                            <p><span>Ładowność: </span>20 kg</p>
+                            <p><span>Zasięg: </span>1717 mm</p>
+                            <p><span>Precyzja powtórzeń: </span>±0,06 mm</p>
+                            <p class="price"><span>30 000zł</span></p>
+                            <button type="button" class="btn btn-primary"
+                                onclick="window.open('https://www.olx.pl/d/oferta/robot-spawalniczy-motoman-yaskawa-hp20-nx100-cela-spawalnicza-spawanie-CID4269-ID120voi.html');">Zamawiam</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-xl-4" data-aos="flip-right" data-aos-delay="600">
+                        <div class="price-box">
+                            <h3>Motoman HP3</h3>
+                            <hr>
+                            <p><span>System: </span>Yaskawa NX100</p>
+                            <p><span>Ładowność: </span>3 kg</p>
+                            <p><span>Zasięg: </span>677 mm</p>
+                            <p><span>Precyzja powtórzeń: </span>±0,03 mm</p>
+                            <p class="price"><span>18 000zł</span></p>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="window.open('https://www.olx.pl/d/oferta/robot-przemyslowy-spawalniczy-motoman-yaskawa-hp3-spawarka-laserowa-CID4269-IDWw33r.html');">Zamawiam</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="price-info">
+                        <p>Nasze roboty to używane, w pełni zmodernizowane jednostki, gotowe do pracy w Twojej firmie.
+                            Oferujemy wsparcie w realizacji indywidualnych projektów, programowaniu oraz integracji
+                            robotów z innymi urządzeniami. Istnieje także możliwość dodatkowego szkolenia. <a
+                                href="#contact">Skontaktuj się</a> z
+                            nami, a pomożemy dobrać najlepsze rozwiązanie!
+                        </p>
+                        <p class="text-muted">Kliknij <strong>ZAMAWIAM</strong>, aby zobaczyć pełne ogłoszenia.</p>
+
+
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="galery py-5">
             <div class="container pb-4">
                 <h2>galeria</h2>
                 <div class="underline"></div>
@@ -288,74 +360,6 @@
             </div>
         </section>
 
-
-        <section id="offer" class="prices py-5 bg-light">
-
-            <h2>Oferta</h2>
-            <div class="underline"></div>
-
-            <div class="container">
-                <div class="price-wrap row text-center justify-content-center">
-
-
-                    <div class="col-md-6 col-xl-4" data-aos="flip-right" data-aos-delay="200">
-                        <div class="price-box">
-                            <h3>Motoman SK6</h3>
-                            <hr>
-                            <p><span>System: </span>Yaskawa MRC</p>
-                            <p><span>Ładowność: </span>6 kg</p>
-                            <p><span>Zasięg: </span>1322 mm</p>
-                            <p><span>Precyzja powtórzeń: </span>±0,1 mm</p>
-                            <p class="price"><span>29 000zł</span></p>
-                            <button type="button" class="btn btn-secondary"
-                                onclick="window.open('https://www.olx.pl/d/oferta/yaskawa-motoman-robot-przemyslowy-spawalniczy-zintegrowany-obrotnik-CID4269-IDX0UPk.html', '_blank');">Zamawiam</button>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4" data-aos="flip-right" data-aos-delay="400">
-                        <div class="price-box">
-                            <h3>Motoman HP20</h3>
-                            <hr>
-                            <p><span>System: </span>Yaskawa NX100</p>
-                            <p><span>Ładowność: </span>20 kg</p>
-                            <p><span>Zasięg: </span>1717 mm</p>
-                            <p><span>Precyzja powtórzeń: </span>±0,06 mm</p>
-                            <p class="price"><span>30 000zł</span></p>
-                            <button type="button" class="btn btn-primary"
-                                onclick="window.open('https://www.olx.pl/d/oferta/robot-spawalniczy-motoman-yaskawa-hp20-nx100-cela-spawalnicza-spawanie-CID4269-ID120voi.html');">Zamawiam</button>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-xl-4" data-aos="flip-right" data-aos-delay="600">
-                        <div class="price-box">
-                            <h3>Motoman HP3</h3>
-                            <hr>
-                            <p><span>System: </span>Yaskawa NX100</p>
-                            <p><span>Ładowność: </span>3 kg</p>
-                            <p><span>Zasięg: </span>677 mm</p>
-                            <p><span>Precyzja powtórzeń: </span>±0,03 mm</p>
-                            <p class="price"><span>18 000zł</span></p>
-                            <button type="button" class="btn btn-secondary"
-                                onclick="window.open('https://www.olx.pl/d/oferta/robot-przemyslowy-spawalniczy-motoman-yaskawa-hp3-spawarka-laserowa-CID4269-IDWw33r.html');">Zamawiam</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <div class="price-info">
-                        <p>Nasze roboty to używane, w pełni zmodernizowane jednostki, gotowe do pracy w Twojej firmie.
-                            Oferujemy wsparcie w realizacji indywidualnych projektów, programowaniu oraz integracji
-                            robotów z innymi urządzeniami. Istnieje także możliwość dodatkowego szkolenia. <a
-                                href="#contact">Skontaktuj się</a> z
-                            nami, a pomożemy dobrać najlepsze rozwiązanie!
-                        </p>
-                        <p class="text-muted">Kliknij <strong>ZAMAWIAM</strong>, aby zobaczyć pełne ogłoszenia.</p>
-
-
-                    </div>
-                </div>
-
-        </section>
-
         <section id="services" class="services py-5">
 
             <div class="services-shadow"></div>
@@ -374,8 +378,6 @@
                             <p class="card-text">Tworzenie i optymalizacja programów dla robotów min. Yaskawa, KUKA,
                                 ABB, Fanuc oraz ich integracja z liniami produkcyjnymi.</p>
                         </div>
-                        <div class="card-footer d-flex justify-content-around">
-                        </div>
                     </div>
 
                     <div class="card mx-3">
@@ -385,8 +387,6 @@
                             <h5 class="card-title">OPTYMALIZACJA STANOWISK</h5>
                             <p class="card-text">Unowocześnianie istniejących systemów, zwiększanie wydajności pracy
                                 robotów oraz wdrażanie nowych funkcji.</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-around">
                         </div>
                     </div>
 
@@ -400,8 +400,6 @@
                             <p class="card-text">Łączenie robotów z systemami sterowania PLC (Siemens, Omron,
                                 Allen-Bradley) oraz wdrażanie interfejsów HMI.</p>
                         </div>
-                        <div class="card-footer d-flex justify-content-around">
-                        </div>
                     </div>
 
 
@@ -412,8 +410,6 @@
                             <h5 class="card-title">SERWIS I DIAGNOSTYKA</h5>
                             <p class="card-text">Przeglądy techniczne, kalibracja, naprawa, wymiana części oraz backup i
                                 przywracanie systemów sterowania.</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-around">
                         </div>
                     </div>
 
@@ -427,8 +423,6 @@
                             <p class="card-text">Prowadzenie szkoleń z programowania i obsługi robotów oraz wsparcie w
                                 doborze sprzętu i realizacji projektów.</p>
                         </div>
-                        <div class="card-footer d-flex justify-content-around">
-                        </div>
                     </div>
 
 
@@ -440,59 +434,88 @@
                             <p class="card-text">Tworzenie i wdrażanie stanowisk spawalniczych, montażowych oraz
                                 paletyzujących wraz z pełną dokumentacją.</p>
                         </div>
-                        <div class="card-footer d-flex justify-content-around">
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+        <section id="portfolio" class="galery portfolio py-5">
+            <div class="container">
+                <h2 class="text-center">Portfolio</h2>
+                <div class="underline mx-auto"></div>
+        
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!-- Zdjęcie -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <img src="./img/portfolio1.jpg" alt="Portfolio Image" class="img-fluid media-item">
+                                <p class="slide-description">Wymiana przekładni robota Yaskawa HP3.</p>
+                            </div>
+                        </div>
+                        <!-- Filmy -->
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <video controls class="media-item">
+                                    <source src="./videos/portfolio2.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p class="slide-description">Test robota Yaskawa HP20.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <video controls class="media-item">
+                                    <source src="./videos/portfolio3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p class="slide-description">Współpraca robota Yaskawa SK6 z pozycjonerem.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <video controls class="media-item">
+                                    <source src="./videos/portfolio4.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p class="slide-description">Test robota Yaskawa HP3 po wymianie przekładni.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <video controls class="media-item">
+                                    <source src="./videos/portfolio5.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p class="slide-description">Spawanie detali dla branży budowlanej.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-content">
+                                <video controls class="media-item">
+                                    <source src="./videos/portfolio6.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <p class="slide-description">Kompleksowa wymiana olei i smarów w robotach.</p>
+                            </div>
                         </div>
                     </div>
-
+                    <!-- Przyciski nawigacyjne -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Paginacja -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-
-
-
         </section>
-
-
-        <section id="achievements" class="achievements py-5">
-            <h2>osiągnięcia</h2>
-            <div class="underline"></div>
-            <div class="container">
-                <div class="row achievements-list text-center text-uppercase">
-                    <div class="achievement col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="100">
-                        <i class="fa-solid fa-thumbs-up"></i>
-                        <p class="achievement-number">100%</p>
-                        <p class="achievement-text">zadwolonych klientów</p>
-                    </div>
-                    <div class="achievement col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="300">
-                        <i class="fa-solid fa-wrench"></i>
-                        <p class="achievement-number">73</p>
-                        <p class="achievement-text">zregenerowanych robotów</p>
-                    </div>
-                    <div class="achievement col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="500">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <p class="achievement-number">22</p>
-                        <p class="achievement-text">lata doświadczenia</p>
-                    </div>
-                    <div class="achievement col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="400">
-                        <i class="fa-solid fa-xmarks-lines"></i></i>
-                        <p class="achievement-number">1000+</p>
-                        <p class="achievement-text">podłączonych linii produkcyjnych</p>
-                    </div>
-                    <div class="achievement col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="600">
-                        <i class="fa-solid fa-earth-americas"></i>
-                        <p class="achievement-number">17</p>
-                        <p class="achievement-text">odwiedzonych kraji</p>
-                    </div>
-                    <div class="achievement col-md-6 col-lg-4 col-xl-2" data-aos="zoom-in" data-aos-delay="200">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <p class="achievement-number">55</p>
-                        <p class="achievement-text">przeprowadzonych szkoleń</p>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </section>
+        
+        
+        
 
         <section id="contact" class="contact py-5">
             <h2>kontakt</h2>
@@ -550,8 +573,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/slicksettings.js"></script>
+    <script src="js/Swiper.js"></script>
     <script src="js/script.js"></script>
 </body>
 

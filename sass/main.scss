@@ -165,7 +165,7 @@ header {
 .galery {
 	.carousel-item {
 		position: relative;
-		height: 600px;
+    height: 600px; /* Stała wysokość dla spójności */
 	}
 	.carousel-caption {
 		position: absolute;
@@ -256,23 +256,7 @@ header {
 	}
 }
 
-.achievements {
-	i {
-		padding: 10px;
-		font-size: 48px;
-		color: $white;
-		text-shadow: 0 0 5px black;
-	}
-	.achievements-list {
-		padding: 20px 0;
-	}
-	.achievement-number {
-		font-size: 22px;
-	}
-	.achievement-text {
-		font-size: 13px;
-	}
-}
+
 
 .contact {
 	position: relative;

@@ -34,3 +34,5 @@ if (history.scrollRestoration) {
 		window.scrollTo(0, 0);
 	};
 }
+
+

@@ -120,7 +120,7 @@ h2 {
 nav {
   text-transform: uppercase;
   transition: background-color 0.6s;
-  z-index: 1;
+  z-index: 100;
 }
 nav .nav-link,
 nav .fa-bars {
@@ -232,8 +232,11 @@ header .fa-chevron-down {
 
 .galery .carousel-item {
   position: relative;
+  justify-content: center;
+  align-items: center;
   height: 600px;
 }
+
 .galery .carousel-caption {
   position: absolute;
   left: 0;
@@ -311,7 +314,7 @@ header .fa-chevron-down {
   padding: 10px;
 }
 .services .card .card-body {
-  height: 160px;
+  height: 230px;
 }
 .services .card:hover {
   transform: scale(0.96);
@@ -321,23 +324,35 @@ header .fa-chevron-down {
   text-align: center;
   text-transform: uppercase;
 }
-
-.achievements i {
-  padding: 10px;
-  font-size: 48px;
-  color: #fff;
-  text-shadow: 0 0 5px black;
+.swiper-button-next,
+.swiper-button-prev
+{
+  color:#039dff !important;
 }
-.achievements .achievements-list {
-  padding: 20px 0;
-}
-.achievements .achievement-number {
-  font-size: 22px;
-}
-.achievements .achievement-text {
-  font-size: 13px;
+.swiper-pagination-bullet-active{
+  background: #039dff !important;
 }
 
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slide-description {
+  padding: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Ustawienie maksymalnej wysokości i responsywnej szerokości dla zdjęć i filmów */
+.media-item {
+  max-height: 300px; /* Maksymalna wysokość */
+  width: auto; /* Automatyczne dopasowanie szerokości */
+  max-width: 100%; /* Zapobiega wyjściu poza kontener */
+  object-fit: contain; /* Zapewnia, że nic nie będzie ucięte */
+  border-radius: 10px;
+}
 .contact {
   position: relative;
   background-image: url(../img/skyline-1869214_1280.jpg);
@@ -404,6 +419,7 @@ header .fa-chevron-down {
   .services .card img {
     height: 300px;
   }
+
 }
 @media (min-width: 992px) {
   nav {
@@ -415,9 +431,22 @@ header .fa-chevron-down {
   .prices .price-info {
     font-size: 18px;
   }
+  .media-item {
+    max-height: 520px;
+  }
 }
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url(../img/pexels-hyundaimotorgroup-19233057-1960.jpg);
   }
-}/*# sourceMappingURL=main.css.map */
+  .media-item {
+    max-height: 600px;
+  }
+
+}
+@media (min-width: 1400px) {
+  .services .card .card-body {
+    height: 160px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
