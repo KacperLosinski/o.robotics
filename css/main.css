@@ -350,6 +350,7 @@ header .fa-chevron-down {
   max-width: 100%; /* Zapobiega wyjściu poza kontener */
   object-fit: contain; /* Zapewnia, że nic nie będzie ucięte */
   border-radius: 10px;
+  box-shadow: 5px 5px 12px -4px rgba(8, 8, 8, 1);
 }
 .contact {
   position: relative;
