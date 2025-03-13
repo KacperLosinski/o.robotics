@@ -232,8 +232,6 @@ header .fa-chevron-down {
 
 .galery .carousel-item {
   position: relative;
-  justify-content: center;
-  align-items: center;
   height: 600px;
 }
 

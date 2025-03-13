@@ -41,7 +41,7 @@ h2 {
 nav {
 	text-transform: uppercase;
 	transition: background-color 0.6s;
-	z-index: 1;
+	z-index: 100;
 	.nav-link,
 	.fa-bars {
 		color: $white;
@@ -235,6 +235,7 @@ header {
 	}
 	.card {
 		transition: transform 0.3s;
+		padding: 10px;
 		img {
 			height: 200px;
 			object-fit: cover;
@@ -243,7 +244,7 @@ header {
 			padding: 10px;
 		}
 		.card-body {
-			height: 160px;
+			height: 230px;
 		}
 	}
 	.card:hover {
@@ -256,6 +257,35 @@ header {
 	}
 }
 
+.swiper-button-next,
+.swiper-button-prev
+{
+  color:#039dff !important;
+}
+.swiper-pagination-bullet-active{
+  background: #039dff !important;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.slide-description {
+  padding: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Ustawienie maksymalnej wysokości i responsywnej szerokości dla zdjęć i filmów */
+.media-item {
+  max-height: 300px; /* Maksymalna wysokość */
+  width: auto; /* Automatyczne dopasowanie szerokości */
+  max-width: 100%; /* Zapobiega wyjściu poza kontener */
+  object-fit: contain; /* Zapewnia, że nic nie będzie ucięte */
+  border-radius: 10px;
+}
 
 
 .contact {
@@ -347,4 +377,12 @@ header {
 	header .hero-img {
 		background-image: url(../img/pexels-hyundaimotorgroup-19233057-1960.jpg);
 	}
+	.media-item {
+    max-height: 600px;
+  }
+}
+@media (min-width: 1400px) {
+  .services .card .card-body {
+    height: 160px;
+  }
 }
